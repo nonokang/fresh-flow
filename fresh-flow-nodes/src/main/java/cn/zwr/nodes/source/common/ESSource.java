@@ -10,6 +10,15 @@ import org.elasticsearch.spark.rdd.api.java.JavaEsSpark;
 
 import java.util.Map;
 
+/**
+ * <title>ESSource</title>
+ * <p>处理ES的通用父类，子类需要继承实现得到ES数据的后续处理</p>
+ *
+ * @param <T>
+ *
+ * @author Alex Han
+ * @version 1.0
+ */
 public abstract class ESSource<T> extends BoundSource<T> {
     public final String CLUSTER_NAME = "cluster.name";
     public final String ES_NODES = "es.nodes";

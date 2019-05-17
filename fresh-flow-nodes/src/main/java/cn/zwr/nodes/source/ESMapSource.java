@@ -6,6 +6,13 @@ import org.apache.spark.api.java.JavaRDD;
 
 import java.util.Map;
 
+/**
+ * <title>ESMapSource</title>
+ * <p>读取ES数据，直接返回value数据JavaRDD</p>
+ *
+ * @author Alex Han
+ * @version 1.0
+ */
 public class ESMapSource extends ESSource<Map> {
 
     public ESMapSource(SparkConf conf) {
