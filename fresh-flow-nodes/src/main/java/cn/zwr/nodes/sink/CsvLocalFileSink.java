@@ -29,7 +29,8 @@ public class CsvLocalFileSink<T> extends BoundSink<T> {
                 for(Method method : t.getClass().getMethods()){
                     if (method.getName().startsWith("get") &&
                     !method.getName().endsWith("Class")) {
-                        stringJoiner.add("\"" + method.invoke(t).toString() + "\"");
+                        if(method.invoke(t) != null)
+                            stringJoiner.add("\"" + method.invoke(t).toString() + "\"");
                     }
                 }
                 return stringJoiner.toString();

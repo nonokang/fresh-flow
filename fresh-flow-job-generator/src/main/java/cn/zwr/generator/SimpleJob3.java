@@ -12,7 +12,7 @@ import java.util.Properties;
 public class SimpleJob3 {
     public static void main(String[] args) throws Exception {
         Properties properties = new Properties();
-        String path = "src/main/resources/SimpleJob3.properties";
+        String path = "src/main/resources/SimpleJob_test.properties";
         if(args.length > 0){
             path = args[0];
         }
