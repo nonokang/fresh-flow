@@ -1,6 +1,6 @@
 package cn.zwr.nodes.sink;
 
-import cn.csg.stream.core.UnboundDataBaseSink;
+import cn.zwr.core.node.UnboundSink;
 import org.apache.spark.streaming.api.java.JavaDStream;
 
 /**
@@ -12,7 +12,7 @@ import org.apache.spark.streaming.api.java.JavaDStream;
  * @author
  * @version 1.0
  */
-public class UnboundHdfsSink extends UnboundDataBaseSink<String> {
+public class UnboundHdfsSink extends UnboundSink<String> {
     //todo 定义hdfs的配置
     @Override
     public void write(JavaDStream<String> data) {

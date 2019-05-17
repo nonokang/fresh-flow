@@ -1,6 +1,7 @@
 package cn.zwr.core.node;
 
 import com.google.common.collect.Maps;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Map;
@@ -12,6 +13,7 @@ import java.util.Map;
  * @author Alex Han
  * @version 1.0
  */
+@ToString
 public class NodeOptions implements Serializable {
     private static final long serialVersionUID = -6714103315452225699L;
 
@@ -25,7 +27,7 @@ public class NodeOptions implements Serializable {
     }
 
     public void setOption(String name, String val) {
-        options.put(name,  val);
+        options.put(name, val);
     }
 
     public String[] getOptionNameAsArray(){

@@ -1,8 +1,8 @@
 package cn.zwr.nodes.sink;
 
-import cn.csg.stream.core.EventCommonDataDetail;
-import cn.csg.stream.node.sink.common.ESSchemaSink;
-import cn.csg.stream.pojo.common.EventCommon;
+import cn.zwr.nodes.sink.common.ESSchemaSink;
+import cn.zwr.pojo.common.EventCommon;
+import cn.zwr.pojo.common.EventCommonDataDetail;
 import com.google.common.collect.Maps;
 import lombok.NoArgsConstructor;
 import org.apache.spark.api.java.function.Function;

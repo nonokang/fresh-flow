@@ -1,9 +1,9 @@
 package cn.zwr.util;
 
-import cn.csg.stream.constants.EventConstants;
-import cn.csg.stream.pojo.CorporationBean;
-import cn.csg.stream.pojo.DbDeviceTmpBean;
-import cn.csg.stream.pojo.DeviceBean;
+import cn.zwr.pojo.CorporationBean;
+import cn.zwr.pojo.DbDeviceTmpBean;
+import cn.zwr.pojo.DeviceBean;
+import cn.zwr.pojo.constants.EventConstants;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.Map;

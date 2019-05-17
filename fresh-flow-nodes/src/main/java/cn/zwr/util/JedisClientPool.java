@@ -1,6 +1,6 @@
 package cn.zwr.util;
 
-import cn.csg.stream.core.BaseClass;
+import cn.zwr.core.BaseClass;
 import io.codis.jodis.RoundRobinJedisPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

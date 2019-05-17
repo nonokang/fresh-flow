@@ -1,6 +1,6 @@
 package cn.zwr.nodes.sink.common;
 
-import cn.zwr.core.node.UnboundDataBaseSink;
+import cn.zwr.core.node.UnboundSink;
 
 /**
  * <title>ESSchemaSink</title>
@@ -11,6 +11,6 @@ import cn.zwr.core.node.UnboundDataBaseSink;
  * @author Alex Han
  * @version 1.0
  */
-public abstract class ESSchemaSink<T> extends UnboundDataBaseSink<T> {
+public abstract class ESSchemaSink<T> extends UnboundSink<T> {
     private static final long serialVersionUID = -3476067168544969723L;
 }
