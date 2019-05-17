@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * <title>EsSource</title>
+ * <title>ESSchemaSource</title>
  * <p>从Es读取数据生成Object</p>
  *
  * @param <T>
@@ -22,7 +22,7 @@ import java.util.Map;
  * @author Alex Han
  * @version 1.0
  */
-public class EsSource<T> extends BoundSource<T> {
+public class ESSchemaSource<T> extends BoundSource<T> {
     public final String CLUSTER_NAME = "cluster.name";
     public final String ES_NODES = "es.nodes";
     public final String ES_PORT = "es.port";
@@ -33,7 +33,7 @@ public class EsSource<T> extends BoundSource<T> {
     public final String ES_TYPE = "es.type";
     public final String QUERY = "query";
 
-    public EsSource(SparkConf conf) {
+    public ESSchemaSource(SparkConf conf) {
         this.conf = conf;
     }
 
